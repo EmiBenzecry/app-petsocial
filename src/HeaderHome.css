@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.headerhome{
+    background-color: white;
+    height: 60px;
+    padding:  0 15px;
+    display: flex;
+    justify-content: space-between;
+    object-fit: contain;
+    z-index: 100;
+    box-shadow: 5px 5px 7px -7px rgba(0, 0, 0, 2);
+    
+    
+    
+    margin-bottom: 10px;
+}
+.headerhome__left{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+
+.headerhome__middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     cursor: pointer;
+   
+}
+     
+   
+
+.headerhome__icons{
+  padding: 0 30px;
+
+}
+
+.header__icons{
+    width: 35px;
+    height: 39px;
+}
+
+.header__icons:hover{
+
+    border-bottom: 4px solid #1da1e9;
+  
+
+}
+
+.headerhome__right{
+    display: flex;
+    
+    align-items: center;
+    margin-right: 5px;
+   
+    
+
+}
+
+.headerhome__user {
+    display: flex;
+    align-items: center;
+}
+
+.headerhome__name{
+    color:#085178ea;
+}
+
+.homeHeader__userName{
+    margin-right: 5px;
+    font-size: medium;
+    color:#085178ea;
+}
+
+
+
+.dropdown{
+
+    color:#054161ea;
+    margin-top: 7px;
+    margin-left: 5px;
+      
+}
+
+.homeHeader section .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #085178ea;
+    min-width: 160px;
+    overflow: auto;
+   
+    z-index: 1;
+}
+
+.homeHeader section .dropdown-content a {
+    color:#085178ea;
+    text-decoration: none;
+    display :block;
+}
+
+
+.dropdown-content {
+    margin-top: 2px;
+    height: 30px;
+    display: none;
+    position : absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 5px 8px -4px rgba(8, 80, 120, 50);
+    z-index: 1;
+    margin-left: -50px;
+    cursor:pointer;
+}
+
+.dropdown-content a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #4267b2;
+}
+
+.dropdown-content a:hover {
+    margin-top: 10px;
+    margin-bottom : 10px;
+    
+}
+
+.dropdown-content a:hover p {
+    color:#085178ea ;
+    
+}
+
+.dropdown-content a > p {
+    margin-top: 6px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#085178ea;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+

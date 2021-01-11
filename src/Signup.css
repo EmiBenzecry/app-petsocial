@@ -1,0 +1,32 @@
+.singup__container{
+
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.signup__img{
+
+    width: 110px;
+    height: 120px;
+    border-radius: 80px;
+}
+
+.login__input{
+
+    width: 300px;
+}
+
+.signup__button{
+
+    background-color: #0e86c7;
+    border:none;
+    color: #fff;
+    width: 250px;
+    margin-top: 10px;
+    cursor: pointer;
+    height: 42px;
+    font-size: medium;
+}

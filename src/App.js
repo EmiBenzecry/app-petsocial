@@ -1,24 +1,55 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
+import { BrowserRouter, BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { auth } from './firebase.js';
+import Login from './Login';
+import Signup from './Signup'
+import HeaderHome from './HeaderHome';
+import HeaderPet from './HeaderPet';
+import Posts from './Posts'
+import Search from './component/Search';
+import HomeBuy from './HomeBuy';
 
 function App() {
+
+  const [user, setUser] = useState([]);
+
+  auth.onAuthStateChanged((authUser) => {
+    if (authUser) {
+      setUser(authUser)
+    } else {
+      setUser(false);
+    }
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <Router>
+    
+      <Switch>
+        <Route path="/login"> 
+          <Login/>
+        </Route>
+        <Route path="/signup">
+          <Signup />
+        </Route>
+        <Route exact path="/">
+          <HeaderHome user={user}/>
+          <Search/>
+          <div className="app__posts">
+          <Posts  user={user} />
+          </div>
+        </Route>
+        <BrowserRouter>
+        <Route path="/homebuy">
+        <HeaderPet />
+      <HomeBuy/>
+    </Route>
+  </BrowserRouter>    
+       
+      </Switch>
+    </Router>
+         
+  </div>       
   );
 }
 

@@ -1,0 +1,20 @@
+.HomeBuy__img{
+    
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(3, 100, 153),rgba(8, 80, 120,0) );   
+                                          
+}
+
+.headerbuy__tienda{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.headerbuy__img{
+    margin-top: 25px;
+    width: 40%;
+    height: 500px;
+}
+ 

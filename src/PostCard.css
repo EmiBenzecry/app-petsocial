@@ -1,0 +1,164 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    
+}
+
+.postcard{
+    
+    
+    
+    width: 33%;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: white;
+   
+    box-shadow: 5px 5px 7px -7px rgba(0, 0, 0, 2);
+   
+}
+
+.postcard__header{
+
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom:1px solid rgba(226, 223, 223, 0.651);
+    margin-bottom: 5px;
+    position: relative;
+
+    
+    
+}
+
+.postcard__user{
+
+    margin-left: 5px;
+    font-size: medium;
+    color:#085178ea;
+}
+
+.postcard__message{
+
+    padding: 20px;
+}
+
+.postcard__image{
+    display: flex;
+    justify-content: center;
+}
+.postcard__image > img{
+    
+    width:98%;
+    height: 400px;
+
+}
+
+.postcard__options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5px;
+    padding: 15px;
+    border-top: 1px solid rgba(226, 223, 223, 0.651);
+    color:gray;
+    cursor: pointer;
+    font-size: small;
+}
+
+.postcard__option{
+    display: flex;
+    align-items: center;
+   
+}
+
+.transparent__submit {
+    display: none;
+}
+
+.commentBox {
+    display: flex;
+    flex-direction: row;
+   
+   
+}
+
+.post__avatar2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:20px;
+}
+
+.commentInputBox {
+    border-radius: 20px;
+    border: 1px solid gray;
+    outline: none;
+    background-color: #F2F3F5;
+    height: 24px !important;
+    width: 330px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.commentInputBox::-webkit-input-placeholder {
+    color: gray;
+}
+
+.pressEnterToPost {
+    color: rgb(153, 153, 153);
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:70px;
+    margin-top: -14px;
+    margin-bottom: 8px;
+    display:none
+}
+
+.comments__show {
+    display: flex;
+    flex-direction: row;
+}
+
+.comments__show.myself {
+    display: flex;
+    flex-direction: row;
+    border-left: 2px solid  #085178ea;;
+}
+
+.container__comments p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    
+}
+
+.container__comments span {
+    color:#085178ea;
+    font-weight: 700;
+}
+
+.post__comments {
+    padding:20px;
+}
+
+.post__likeandlove{
+
+    display: flex;
+    align-items: center;
+   margin-left: 5px;
+}
+
+.post__icons{
+
+    color: rgb(206, 15, 15);
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+  
+  
+    background-color: #48abe0;
+    height: 60px;
+    opacity: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+ 
+   
+}
+
+.header__logo{
+    
+    height: 50px;
+    width: 55px;
+    margin-left: 20px;
+}
+
+.header__name{
+
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: contain;
+    
+   
+}
+
+.header__search{
+
+  display: flex;
+  align-items: center;
+  flex:1;
+
+
+}
+
+
+
+.header__searchInput{
+
+    height: 12px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    
+}
+
+.header__searchIcon{
+    
+    color:white ;
+    height: 22px !important;
+    padding: 5px;
+}
+
+.header__section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__icons{
+  
+    height: 20 px;
+    width: 30px;
+    
+    margin-right: 5px;
+    
+    
+   
+}
+
+.header__shopping {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-right: 5px;
+}
+
+
+
+.header__avatar{
+    margin-right: 10px;
+}
